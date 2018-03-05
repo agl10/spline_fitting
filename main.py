@@ -98,7 +98,7 @@ if __name__ == "__main__":
     print("... The shape of xyz_coords is " + str(xyz_coords.shape))
 
 
-    ordered_seams, thetas, radii, output = full_seam_finder_0(xyz_coords, decimation=700, num_of_neighbs=25, minimum_distance=.010, dtheta=.05,
+    ordered_seams, thetas, radii, output = full_seam_finder_0(xyz_coords, decimation=100, num_of_neighbs=25, minimum_distance=.010, dtheta=.05,
                                        z_order_asscending=True)
 
     #print(sorted(thetas))
@@ -174,4 +174,6 @@ if __name__ == "__main__":
     plt.ylabel("curvature [1/m]")
 
     plt.show()
+    
+    plot_3D_ordered_seams(ordered_seams)
     

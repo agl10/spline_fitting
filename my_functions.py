@@ -21,6 +21,7 @@ import networkx as nx
 from mpl_toolkits.mplot3d import Axes3D
 import math
 
+
 def read_xyz(filename):
     """
     DESCRIPTION
